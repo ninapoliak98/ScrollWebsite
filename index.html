@@ -6,9 +6,146 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scroll Website</title>
-    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Logo</a>
+            <!-- Nav Bar Mobile -->
+            <div class="navbar__toggle" id="mobile">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>    
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+        
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+    
+                <li class="navbar__item">
+                    <a href="#services" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">A catch phrase <span>here</span></h1>
+            <p class="hero__description">A description goes here</p>
+            <button class="main__btn">
+                <a href="#">Explore</a>
+            </button>
+        </div>
+    </div>
+      <!-- About Section -->
+      <div class="main" id="about">
+        <div class="main__container">
+          <div class="main__img--container">
+            <div class="main__img--card">Icon or Image goes here</div>
+          </div>
+          <div class="main__content">
+            <h1>What do we do?</h1>
+            <h2>We do something</h2>
+            <p>Contact Us to learn more about our services</p>
+            <button class="main__btn"><a href="#">Contact Us</a></button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Services Section -->
+      <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+          <div class="services__card">
+            <h2>Service 1</h2>
+            <p>Desc about service 1</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+          <div class="services__card">
+            <h2>Service 2</h2>
+            <p>Desc about service 2</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+          <div class="services__card">
+            <h2>Service 3</h2>
+            <p>Desc about service 3</p>
+            <div class="services__btn"><button>Get Started</button></div>
+          </div>
+        </div>
+      </div>
+      <!--Feature Section -->
+      <div class="main" id="sign-up">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Join Our Team</h1>
+                <h2>Sign Up Today</h2>
+                <p>See what makes us different</p>
+                <button class="main__btn"><a href="#">Sign Up</a></button>
+              </div>
+              <div class="main__img--container">
+                <div class="main__img--card">Icon or Image goes here</div>
+              </div>   
+        </div>
+      </div>
+      <!--Footer -->
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Videos</h2>
+              <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+              <a href="/">Agency</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="/">Facebook</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo">COMPANY INC</a>
+            </div>
+            <p class="website__rights">© INC 2020. All rights reserved</p>
+            <div class="social__icons">
+              <a href="/" class="social__icon--link" target="_blank"
+                ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAR9JREFUSEvtV9FtwkAUszcoE8AGdIPCBIxAN6Ab0A26AiOwAbABnaCwAZ3AlVEuupx0kRAXgqK+rxwoz/J79nsXoqdgT7h4HmBJLwCmhStxJnmKczYYS5oA+CkMGtKNSF7CIQWeAdh1BDwnuR8M8C+ATwDHqFqvAL6ic3HG3wBmcf8MJiltW3HgRsLAsHNgkrVAJbm8KwB2h23pc4iijA8kXdJrSNoCWGRc0Smw7fI2OGCr+KNidSFZW6jqsXvreAewLNnjRl9zU06Sfb3uAzgV2t3i8pbZVEy8dcKzVe3yjqNS21YPsdMwVR3rKR0g/4zj6tyt6mGV+tbL3i3iyl/2qtWW7tHcVPTvbbM6fu/Uer1tQyj93/N8SZRmlsv3B2yG3h+XcgmJAAAAAElFTkSuQmCC"/></a>
+              <a href="/" class="social__icon--link"
+                ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhRJREFUSEvlVu0xREEQ7I4AESACRIAIEACFBMjAiQAR+EgAEeC3H06V/2SACFq1mqf2vdt39t2pOsr8ubq73e2Z3p6eJSYUnBAufjewpGkAC4XsPJJ8+25ta8UBdgBgHcDcdwc1/n8BcAXgsC2JLLCkFQCnCeA7gH4h+CKAqVjrBDZIDuwdAI5KHwL0GsA+SR9QHJIMfgxgGYD3LjUrzwF7wx6Aa5KmuVNI2gRAkheSbgP8hOR+elAO2BnOApgfoVKDXgTATlR740+S863AQfMrACvTdA1E0LgGoPrf92d2+pK2AJzHpl2Sp5IU32dSumsVh6ic4R1JC6wWknoArPRc9EgeSto21QCeSN5LcmJuxVWSpv4zioETUCvcOqgOcYK+PyvZ7ePkviK55+7AQa+VbtC5pkLjiqwNg9e0MS5wRfFARVVpkqpuqK0ZF9guZEHV6GpQ6ta7bLbhnwWeGNXuWYvLU8fiqU2fENczAE+xnxOX7zJpJ4Om7eS7de8a9GfbKVHuMAPJKr7UQJy1LbNPcqnFMj2bXWFqmWdtvl5kmUHpyEMiY7F2NVvwO0kX9RXDxuIVyY0WXy76uetYdGY2do9G+/HOCOPR13AEwBVnbXbY0+cswF2dldzl6VPRatD1dCplp1PDAr3ZKraQqjdUEcVRpW3Wz6bsi7PoXS3JSi59ab7lHnfNjIuAS8vssu7/AX8A9G5ULowqLPIAAAAASUVORK5CYII="/></a>
+              <a href="/" class="social__icon--link"
+                ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUZJREFUSEvtVm1Rw1AQ3FUAKAAHxQHUATjAATigKEACOAAU0DqoA4oDHGxnMy8lyTymlzbh9Ud3Jj8yc3ebvc8QhcBCvDgS/1vmDyvVkq4BXDXk+z2KFQA/xg+AJclF17mlWNIlgDcAF1GWoN0SwC3J+oPaXS1p3lEajBsym5Oc1pYbxZKs8isUYnejM5JO/6/iVNfP3WOGPKckndUW8R2Al4D7R+qBScC2a+I6v3eJZwAeA8GeSM4kPQCwz0nApzapfPcitrOk00R+HyQfhrgmS435GpiIUYjdH9sWzTDEKdVOc1W3APYnluQpeAbgOkeRJY6Ok8fBy8brtS+yc+z6FFkgZVZmmssxj8SC5Kbrc2fRNTzvW7wt9t8Abkj6PFbI/oGkg9GcSTdSn+6tDkGCz2Hz/W/igdVmwx3WP9dR8RgZKFbjNfvXgB++0qpbAAAAAElFTkSuQmCC"/></a>
+              <a href="/" class="social__icon--link"
+                ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAASpJREFUSEvtl9FNw0AQRGc6SDqgA0gFkAoogVABJRA6SAeESqAD6IDQQToYNOhsbU6BmLDYRuK+bJ2873Z2dm0TAy0OxMV4wJImAE6TlXgjuYkxdzKWdALgNRnahJuS3DY3NfgCwOMvgeckn0YPvia5LiVYAzj/gRqdM7YhXPOPJWkB4L4PsBmtISStANz0BbYZLPEZAGfsVjt2dZb6WMBnz30LPA9RnPEVgIeigrcaJRYkX4oX7AuX5bI6QXcwybbPJS0B3AK4I+lrG86QbRwMwYwuU+yCPHCATGr4ni7IBQe3exzOmpksqZ6C6WCFWrZlKKWIe3lgSTbX8xDgWs7eMv4H/3Gpk4d193bqEzzMx16ZNn7nejBkrs2Xn7eZpEOxxvMnceikWfvvuaQdLpfAhjUAAAAASUVORK5CYII="/></a>
+              <a href="/" class="social__icon--link">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAcpJREFUSEvtVsFRAzEM3K0AOiAdABUQKoBUAFRAqIBQAVABUAFJBUAH0AElhArELGPf+Hy+s+ObIZ9oJo8kslZaSysTWzJuCRc74H9jfjTVZrYP4BrA1H2+ATwDeCS5ViVmNgGw9t/1WwvYBXkFMAud+mhwAd8AKHBsPoFzAD8klVhjMbCcBLwkOcvxbmbvAE4yfl8AFHdCUv5/FgMvANy6/+R0Q/IzFdjMVIGqzZnoFs40jBUDp4Ipmea+PIqZzQHc51BFcwzaqdg1giWCKeul+3zo/s0sZGcI/46kfFvW6WozuwTwVFCJmifVVPHRPLCj7wDAkRuNAvysyxVJjVd/xRs0TBYtcDhONWhqjkXh3iaRB3w1vxKYjo2545LcViQ1w3lg19m6Y3XiWUn0AZ/TUDRCv6RWuyYTaEvmNkxCY9d7vg9YYyLFGnPXyabyyfduJzMT3ZLNGnBJ7cMQQ4Nr0W0rCYqSuCik+oWkzgxaCbCWhnS5xIpAFagBdtUdAtDcqUKvXsk5jLLQIpinFKov29R20hjldqyPJ0DJ4aLk4VAyTupqf7eq2Ceipa5NJXXTY0Ebq8pGv7mqUOMXSG2QmnO7imtYqzrzC9pUlR9K9AFxAAAAAElFTkSuQmCC"/></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    <script src="app.js"></script>
 </body>
 </html>
